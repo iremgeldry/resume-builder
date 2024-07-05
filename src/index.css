@@ -1,0 +1,374 @@
+#root{
+  color:black;
+  font-family:Helvetica, sans-serif;
+  padding: 0px;
+}
+body{
+  background:hsl(0, 0%, 94%);
+}
+
+.menu{
+  background-color: white;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  margin-bottom:20px;
+}
+
+label{
+  font-weight:bold;
+}
+
+
+.ddBtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+  margin: 5px;
+  
+}
+.titles{
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+}
+
+.arrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:none;
+  border:none;
+  height: 2em;
+  width: 2em;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.arrow:hover{
+  background-color: hsla(0, 0%, 0%, 0.05);
+  border:none;
+  border-radius: 5px;
+}
+
+
+.ddTitle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.menu-icon{
+  background: none;
+  align-items: center;
+
+}
+
+.content-closed{
+  display: none;
+}
+
+.content-open{
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      padding: 10px; 
+}
+
+/*.div-inputBox{
+
+  display: flex;
+  flex-direction: column;
+}*/
+
+textarea{
+  border-radius: 5px;
+  border-color: hsl(0, 0%, 80%);
+  height: 50px;
+  min-height: 80px;
+  font-size: .9em;
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.inputBox{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+}
+
+input{
+  width: 100%;
+  height: 2.5em;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-style:solid;
+  border-color: hsl(0, 0%, 80%);
+  border-width: 1px;
+  color: black;
+  text-align: left;
+  font-size: 0.9em;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  outline: none;
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+input[type=text]:focus{
+  border: 2px solid #555;
+
+}
+
+input[type=file]::file-selector-button{
+  background:none;
+  border:none;
+  font-weight: bold;
+}
+
+.date{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  width: fit-content;
+  gap: .25em;
+}
+
+input [type="date"]{
+  width: 100%;
+
+}
+
+.buttons{
+  border:none;
+  font-size: 1em;
+  border-radius: 5px;
+  height: 2.5em;
+  cursor:pointer;
+  transition: background-color 0.5s ease;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+}
+
+.button1-2{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+}
+.button1{
+  width: 48%;
+  background-color: white;
+}
+.button1:hover{
+  background-color: hsl(0, 0%, 95%);
+
+}
+
+.button2{
+  width: 48%;
+  background-color: hsl(9, 100%, 80%);
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+}
+.button2:hover{
+  background-color: hsl(9, 100%, 85%);
+
+}
+.button3{
+  width: 100%;
+  background-color: hsl(9, 100%, 70%);
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+}
+
+.button3:hover{
+  background-color: hsl(9, 100%, 75%);
+
+}
+
+.skill-input{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 10px;
+  gap: 0.25em;
+}
+
+.input-skill{
+
+  display:flex;
+  height: 2.5em;
+  width: 100%;
+  margin: 0;
+}
+
+.remove-btn{
+  border:none;
+  width: 2.5em;
+  height: 2.5em;
+  background:tomato;
+  padding: 0px;
+  border-radius: 5px;
+  margin: 0;justify-content: center;
+}
+
+
+.remove-icon{
+  border:none;
+  cursor: pointer;
+  width: 1em;
+  height: 1em;
+}
+
+
+.remove-btn:hover{
+  background-color: hsl(9, 100%, 75%);
+  border:none;
+  border-radius: 5px;
+}
+
+.add-btn{
+  display: flex;
+  align-items: center;
+  margin-top:10px;
+}
+
+.remove-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.remove-text button{
+  background: none;
+  border: none;
+  color: tomato;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+
+
+.add-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.add-text button{
+  background: none;
+  border: none;
+  color: tomato;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+
+hr{
+  border: 1px solid tomato;
+  margin:20px 0px;
+}
+
+/*--------CV--------*/
+
+.cv{
+  
+  margin: 0px;
+  background-color: white;
+  height: fit-content;
+  padding: 20px;
+  box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.1) ;
+  text-align: start;
+  border-radius: 10px;
+}
+
+h2{
+  font-size: 1em;
+}
+
+.cv p{
+  font-size: 1em;
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-bottom: 10px;
+}
+
+#profile-pic{
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: top center;
+  width: 80%;
+  border:none;
+}
+
+.contact-list{
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  
+
+}
+
+.resume-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2em;
+  width: 2em;
+  background-color: tomato;
+  border-radius: 50px;
+  
+}
+
+.cv-title{
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 8px;
+  margin: 0;
+  background-color: tomato;
+  
+}
+
+.cv-skill{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-auto-flow: column;
+  
+  
+}
+.cv-skill ul {
+  margin: 0.25em;
+  padding: 0em 1em;
+  
+}
+
+.cv-date{
+  display: flex;
+  flex-direction: row;
+  gap:0.25em;
+}
+.part1{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content:space-between;
+}
+
+.part2{
+  color: tomato;
+  margin: 0px;
+}
